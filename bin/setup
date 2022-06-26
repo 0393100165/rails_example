@@ -30,22 +30,4 @@ FileUtils.chdir APP_ROOT do
 
   puts "\n== Restarting application server =="
   system! "bin/rails restart"
-
-  development:
-  adapter: postgresql
-  database: db/my_database_development
-  pool: 5
-  timeout: 5000
-
-  test:
-    adapter: postgresql
-    database: db/my_database_development
-    pool: 5
-    timeout: 5000
-
-  production:
-    adapter: postgresql
-    database: db/my_database_development
-    pool: 5
-    timeout: 5000
 end
